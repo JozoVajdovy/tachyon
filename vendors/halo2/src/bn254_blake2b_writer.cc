@@ -6,7 +6,7 @@
 
 namespace tachyon::halo2_api::bn254 {
 
-class Blake2bWriter::Impl
+class Blake2bWriter::Impl 
     : public Blake2bWriterImpl<math::bn254::G1AffinePoint> {};
 
 Blake2bWriter::Blake2bWriter() : impl_(new Blake2bWriter::Impl()) {}
